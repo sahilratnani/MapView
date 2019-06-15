@@ -1,0 +1,19 @@
+    {
+        "location": [
+        {
+        "lat":"38.5356979",
+        "long":"-122.5300854",
+        "city_name":"Stony Hill Vineyard"
+        },
+        {
+        "lat":"38.47159",
+        "long":"-122.4356324",
+        "city_name":"Pestoni Family Estate Winery"
+        },
+        {
+        "lat":"38.472837",
+        "long":"-122.407193",
+        "city_name":"Honig Vineyard & Winery"
+        }
+        ]
+    }

@@ -17,24 +17,10 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="wfx-dg-InE">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
-                            </mapView>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="wfx-dg-InE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Y5m-3V-W87"/>
-                            <constraint firstItem="wfx-dg-InE" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dpL-ww-Rt3"/>
-                            <constraint firstItem="wfx-dg-InE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wtj-ry-fEj"/>
-                            <constraint firstItem="wfx-dg-InE" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="zSt-F7-gXJ"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="PgR-wk-wAX"/>
-                    <connections>
-                        <outlet property="mapView" destination="wfx-dg-InE" id="aft-Bz-g7P"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

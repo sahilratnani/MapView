@@ -13,6 +13,10 @@
 		8F270E4D22B4E7D0002A9615 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F270E4B22B4E7D0002A9615 /* Main.storyboard */; };
 		8F270E4F22B4E7D1002A9615 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F270E4E22B4E7D1002A9615 /* Assets.xcassets */; };
 		8F270E5222B4E7D1002A9615 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F270E5022B4E7D1002A9615 /* LaunchScreen.storyboard */; };
+		8F270E5A22B4F1BA002A9615 /* location.json in Sources */ = {isa = PBXBuildFile; fileRef = 8F270E5922B4F1BA002A9615 /* location.json */; };
+		8F270E5E22B4F87C002A9615 /* location.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F270E5922B4F1BA002A9615 /* location.json */; };
+		8F270E6022B4F99E002A9615 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F270E5F22B4F99E002A9615 /* Location.swift */; };
+		8F270E6222B505BE002A9615 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F270E6122B505BE002A9615 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +29,9 @@
 		8F270E4E22B4E7D1002A9615 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F270E5122B4E7D1002A9615 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F270E5322B4E7D1002A9615 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F270E5922B4F1BA002A9615 /* location.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = location.json; sourceTree = "<group>"; };
+		8F270E5F22B4F99E002A9615 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		8F270E6122B505BE002A9615 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C9D697CCF79F3612722F301E /* Pods-mapView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mapView.release.xcconfig"; path = "Target Support Files/Pods-mapView/Pods-mapView.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,14 +76,57 @@
 		8F270E4622B4E7D0002A9615 /* mapView */ = {
 			isa = PBXGroup;
 			children = (
+				8F270E6722B50784002A9615 /* Scenarios */,
+				8F270E6622B50741002A9615 /* View */,
+				8F270E6522B50711002A9615 /* Supporting Files */,
 				8F270E4722B4E7D0002A9615 /* AppDelegate.swift */,
-				8F270E4922B4E7D0002A9615 /* DashboardVC.swift */,
-				8F270E4B22B4E7D0002A9615 /* Main.storyboard */,
-				8F270E4E22B4E7D1002A9615 /* Assets.xcassets */,
-				8F270E5022B4E7D1002A9615 /* LaunchScreen.storyboard */,
 				8F270E5322B4E7D1002A9615 /* Info.plist */,
+				8F270E6322B50664002A9615 /* Resources */,
+				8F270E4E22B4E7D1002A9615 /* Assets.xcassets */,
 			);
 			path = mapView;
+			sourceTree = "<group>";
+		};
+		8F270E6322B50664002A9615 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8F270E6422B506D6002A9615 /* Data */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8F270E6422B506D6002A9615 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				8F270E5922B4F1BA002A9615 /* location.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		8F270E6522B50711002A9615 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8F270E6122B505BE002A9615 /* Constants.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8F270E6622B50741002A9615 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8F270E4B22B4E7D0002A9615 /* Main.storyboard */,
+				8F270E5022B4E7D1002A9615 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8F270E6722B50784002A9615 /* Scenarios */ = {
+			isa = PBXGroup;
+			children = (
+				8F270E4922B4E7D0002A9615 /* DashboardVC.swift */,
+				8F270E5F22B4F99E002A9615 /* Location.swift */,
+			);
+			path = Scenarios;
 			sourceTree = "<group>";
 		};
 		CF8F3819093916C2AAD4C281 /* Pods */ = {
@@ -85,7 +135,6 @@
 				150241B951F59D3CE57553CD /* Pods-mapView.debug.xcconfig */,
 				C9D697CCF79F3612722F301E /* Pods-mapView.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -100,6 +149,7 @@
 				8F270E4022B4E7D0002A9615 /* Sources */,
 				8F270E4122B4E7D0002A9615 /* Frameworks */,
 				8F270E4222B4E7D0002A9615 /* Resources */,
+				C30526556A2C2DA25F8DFC2B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -148,6 +198,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F270E5E22B4F87C002A9615 /* location.json in Resources */,
 				8F270E5222B4E7D1002A9615 /* LaunchScreen.storyboard in Resources */,
 				8F270E4F22B4E7D1002A9615 /* Assets.xcassets in Resources */,
 				8F270E4D22B4E7D0002A9615 /* Main.storyboard in Resources */,
@@ -179,6 +230,30 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C30526556A2C2DA25F8DFC2B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mapView/Pods-mapView-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mapView/Pods-mapView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -186,7 +261,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F270E6222B505BE002A9615 /* Constants.swift in Sources */,
+				8F270E5A22B4F1BA002A9615 /* location.json in Sources */,
 				8F270E4A22B4E7D0002A9615 /* DashboardVC.swift in Sources */,
+				8F270E6022B4F99E002A9615 /* Location.swift in Sources */,
 				8F270E4822B4E7D0002A9615 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
